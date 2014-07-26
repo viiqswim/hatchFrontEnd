@@ -8,13 +8,13 @@ LoginModel = Backbone.Model.extend({
         var _self = this;
         var method = 'verifyInformation';
         $.ajax({
-            type: 'POST',
-            url: 'login.php',
-            data: {method: method,
-                   username: username,
+            type: 'GET',
+            url: 'tryLogin',
+            data: {username: username,
                    password: password},
             success: function(data){
                 _self.set('status', jQuery.parseJSON(data));
+                alert(data);
             }
         });
     },
