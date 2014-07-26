@@ -20,7 +20,7 @@ SignUpModel = Backbone.Model.extend({
                 job: args.job,
             },
             success: function(data){
-                _self.set('status', jQuery.parseJSON(data));
+                console.log(data);
             }
         });
     },
