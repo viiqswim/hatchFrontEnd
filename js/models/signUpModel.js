@@ -18,6 +18,8 @@ SignUpModel = Backbone.Model.extend({
                 lastname: args.lastname,
                 avatar_url: args.avatar_url,
                 job: args.job,
+                skills: args.skills,
+                interest: args.interest,
             },
             success: function(data){
                 console.log(data);

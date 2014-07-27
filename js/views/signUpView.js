@@ -45,6 +45,8 @@ SignUpView = Backbone.View.extend({
         var lastname = $('.lastname_input').val();
         var avatar_url = $('.avatar_url_input').val();
         var job = $('.job_input').val();
+        var skills = $('.skills_input').val();
+        var interest = $('.interest_input').val();
         var args = {
             username: username,
             password: password,
@@ -54,6 +56,8 @@ SignUpView = Backbone.View.extend({
             lastname: lastname,
             avatar_url: avatar_url,
             job: job,
+            skills: skills,
+            interest: interest,
         };
         this.model.registerUser(args);
     },
